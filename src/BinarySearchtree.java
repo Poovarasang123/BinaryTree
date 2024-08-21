@@ -41,8 +41,10 @@ public class BinarySearchtree {
             return Search(root.left,val);
         return Search(root.right, val);
      }
-
-     public Node delete(Node root,int val){
+     public void delete(){
+         root = delete(root,val);
+     }
+     private Node delete(Node root,int val){
         if(root==null){
             return root;
         }
